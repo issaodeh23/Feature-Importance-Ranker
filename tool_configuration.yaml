@@ -1,12 +1,12 @@
 
 # Path to your data file (can be .parquet or .csv)
-filepath: /Users/issaodeh/Documents/GitHub/intern-project-FE/dataset_uv_line1.csv
+filepath: ""
 
-target_column: "QM_database.scope_scrap_rate"  # Replace with your actual target column name
-columns_to_drop:                  # List columns you want to drop, or leave empty
-  - "__index_level_0__"
-  - "QM_database.cast_scrap_rate"
-  - "QM_database.sand_scrap_rate"
+target_column: "" # Replace with your actual target column name
+columns_to_drop: ""                 # List columns you want to drop, or leave empty
+  - ""
+  - ""
+  - ""
 train_size: 0.8                   # Fraction of data for training
 test_size: 0.2                    # Fraction of data for testing
 random_state: 42                  # Random seed for reproducibility
