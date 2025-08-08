@@ -1,0 +1,12 @@
+
+# latest versions of
+pandas==2.0.1
+numpy==1.23.5
+scikit-learn==1.2.2
+jupyter
+shap==0.45.0
+XGBoost
+optuna
+pre-commit
+pyyaml
+click
