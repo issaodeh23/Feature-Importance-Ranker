@@ -121,10 +121,6 @@ Results are saved in a txt file named fir_log.txt where all logs displayed in th
 - **Notebooks**
   All notebooks are intended to try out specific variations of the tool in a jupyter notebook environment.
 
----
-## License
-
-This project is for internal use and research. Contact the author for external use or distribution.
 
 ---
 
