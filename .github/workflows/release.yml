@@ -1,0 +1,19 @@
+# WARNING: INTENTIONALLY INSECURE — demo file for Expecto's CI/CD posture scanner.
+# It does NOT publish anything; it only contains the misconfigurations the
+# scanner is designed to catch. Delete it after the demo.
+name: release
+
+on: push                 # broad trigger: runs on EVERY branch (the Red Hat signature)
+
+permissions:
+  id-token: write        # mints an OIDC token = trusted-publishing capability
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4           # UNPINNED: mutable tag, not a commit SHA
+      - uses: tj-actions/changed-files@v35  # KNOWN-COMPROMISED Action (real IOC)
+      - name: Fake publish (no-op)
+        run: echo "pretend npm publish --provenance"
